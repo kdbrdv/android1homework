@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">android1homework</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="email">Введите вашу почту</string>
+</resources>
