@@ -19,15 +19,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button.findViewById(R.id.button3);
-        email.findViewById(R.id.button);
-        password.findViewById(R.id.button2);
+        button = findViewById(R.id.button3);
+        email = findViewById(R.id.button);
+        password = findViewById(R.id.button2);
 
 
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                if (email.getText().toString().isEmpty() || !password.getText().toString().isEmpty()) {
+                if (email.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
                     Toast.makeText(MainActivity.this, "Введите данные!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Добро пожаловать!", Toast.LENGTH_SHORT).show();
@@ -36,5 +37,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
